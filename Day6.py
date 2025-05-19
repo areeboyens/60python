@@ -1,0 +1,8 @@
+file = open('todos.txt','r')
+todos = file.readlines()
+print(todos)
+file.close()
+file = open('todos1.txt','w')
+file.writelines(todos)
+print(f"lines recorded to file is {todos}")
+file.close()
